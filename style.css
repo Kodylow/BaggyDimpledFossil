@@ -1,0 +1,102 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1A1A1A;
+    /* Matching dark background from logo */
+    color: #C0A9DD;
+    /* Light purple text color to match logo */
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    background: rgba(75, 63, 114, 0.8);
+    /* Translucent background matching logo's purple */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px 0px #564F72;
+    /* Soft glow effect */
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #564F72;
+    /* Border color to match logo's darker elements */
+    background: #2E2B40;
+    /* Dark input fields to complement the overall design */
+    color: #C0A9DD;
+    /* Text color to match logo */
+}
+
+input::placeholder {
+    color: #C0A9DD;
+    /* Light purple placeholder text */
+}
+
+
+.logo {
+    background-image: url('./logo.png');
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    margin: 20px auto;
+    /* Maintain aspect ratio */
+    border-radius: 15px;
+    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #7D3B8A;
+    /* Purple button color to match logo's wing */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #5E2D69;
+    /* Darker purple on hover to add interactivity */
+}
+
+/* Style the labels to look like toggles */
+.toggle label {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #C0A9DD;
+    /* Border color from logo */
+    color: #C0A9DD;
+    /* Text color from logo */
+    border-radius: 50px;
+    /* Pill shape */
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Optional: Add a hover effect */
+.toggle label:hover {
+    background-color: #C0A9DD;
+    /* Lighter or darker version of the logo color */
+    color: white;
+}
+
+/* Change the appearance of the label when the radio button is selected */
+.toggle input[type="radio"] {
+    background-color: green;
+    /* Background color from logo */
+    color: white;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Hermes Address Registration</title>
+    <style srce="style.css"></style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="logo"></div>
+
+        <h1>Register a Hermes Address</h1>
+        <h3>(Async, Noncustodial Lightning Address Messenger using Fedimint)</h3>
+
+        <form>
+            <input type="text" id="username" name="username" placeholder="Username"><br>
+            <input type="text" id="publicKey" name="publicKey" placeholder="Public Key"><br>
+
+            <div class="toggle">
+                <label><input type="radio" name="protocol" value="XMPP"> XMPP</label>
+                <label><input type="radio" name="protocol" value="Nostr"> Nostr</label>
+            </div>
+
+            <select id="fedimint" name="fedimint">
+                <option value="fedimint1">Fedimint 1</option>
+                <option value="fedimint2">Fedimint 2</option>
+            </select><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
